@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="hero-section">
+        <h1 id="hero-title">
+          Generate a <br /><span id="random-password-text"
+            >random password</span
+          >
+        </h1>
+        <p id="title-info">Never use an insecure password again.</p>
+        <div id="password-length">
+          <label id="label-for-password-length" for="input-password-length"
+            >Password length</label
+          >
+          <input
+            type="text"
+            id="input-password-length"
+            pattern="\d*"
+            maxlength="2"
+          />
+          <p id="password-length-info"></p>
+        </div>
+        <div id="toggle-password-options">
+          <div id="toggle-symbols">
+            <label id="label-for-toggle-symbols">Include symbols</label>
+            <input type="checkbox" id="input-toggle-symbols" />
+          </div>
+
+          <div id="toggle-numbers">
+            <label id="label-for-toggle-numbers">Include numbers</label>
+            <input type="checkbox" id="input-toggle-numbers" />
+          </div>
+        </div>
+        <button id="generate-password">Generate Passwords</button>
+      </div>
+      <div id="passwords-container">
+        <input type="text" id="generated-password-one" />
+        <input type="text" id="generated-password-two" />
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
